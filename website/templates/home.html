@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% comment %} <div class="alert alert-warning alert-dismissible fade show" style="margin-bottom: 0rem !important;"
+    role="alert">
+    <strong>Visit Iaxn</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div> {% endcomment %}
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'assets\img\pqr.png' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <img src="{% static 'assets\img\hello_low.png' %}">
+                    <p>IAXN provides internet services to corporates and households.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'assets\img\aaa.png' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <img src="{% static 'assets\img\hello_low.png' %}">
+                    <p>IAXN provides internet services to corporates and households.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'assets\img\iaxx.png' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <img src="{% static 'assets\img\hello_low.png' %}">
+                    <p>IAXN provides internet services to corporates and households.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container my-0">
+        <h2 class="cardtitle text-center my-3 py-3"> About us<h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'assets\img\rrrr.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'assets\img\ffff.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'assets\img\photo1.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                {% comment %} <h2>About Us</h2> {% endcomment %}
+                <p class="mt-5">
+                    As an IAXN Telecom customer you have the convenience to access our
+                    24-hr customer service centre at 88-00-059-059 or 8010-035-035.
+                    Email your questions, comments or suggestions to us at
+                    customercare@axntechnologies.in and we will get right back to you.
+                </p>
+            </div>
+            <div class="row content">
+                <div class="col-lg-6">
+                    <p>
+                        Iaxn Telecom is one of the best internet service provider in
+                        delhi ncr. Now you can get a fiber connectivity in your home
+                        Upto 100 Mbps speed and unlimited ...
+                    </p>
+                    <ul class="mt-2">
+                        <li>
+                            <i class="ri-check-double-line"></i> Free Bandwidth Management
+                            Software
+                        </li>
+                        <li>
+                            <i class="ri-check-double-line"></i> Free Training to your
+                            stafft
+                        </li>
+                        <li>
+                            <i class="ri-check-double-line"></i> Free network consultancy
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0">
+                    <p>
+                        We have team of engineers those who have experience of more than
+                        15 years. We at IAXN have seen all the dyanmics of telecom
+                        sectors, we are in this business since year 2000 (as AXN
+                        Telecom).
+                    </p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Section -->
+
+
+    <div class="container my-3 " style="">
+        <h2 class="text-center my-4 contact-header"> Contact us</h2>
+        <form class="row g-3" action="/contact" method="POST">{% csrf_token %}
+            {% comment %} <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" name="email">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" name="password">
+            </div> {% endcomment %}
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="name" name="name">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address </label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"
+                    name="address">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" name="city">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <input type="text" class="form-control" id="inputCity" name="state">
+                {% comment %} <option selected>Choose...</option>
+                <option>...</option> {% endcomment %}
+                {% comment %} </select> {% endcomment %}
+            </div>
+            {% comment %} <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div> {% endcomment %}
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <footer id="footer" style="background: #0f0f0f!important;
+        color: #fff!important;
+        font-size: 14px!important;
+        text-align: center!important;
+        padding: 30px 0!important;">
+        <div class="container">
+            <img src="{% static 'assets\img\hello_low.png' %}">
+            <p>AXN provides a range of solutions for corporate. Our unparalleled services helps corporate to enhance
+                the
+                potential of their business by digitally connecting every business resource.</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="pinterest"><i class="bx bxl-pinterest"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>iaxn</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/ -->
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+{% endblock %}

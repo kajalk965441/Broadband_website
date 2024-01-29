@@ -1,0 +1,59 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+    <title>Iaxn</title>
+  </head>
+  <body>
+    <div class="collapse float-xs-right" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">Collapsed content</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <div>
+            {% for i in "x" %}
+              <div class="div1" style=  "background-color: white;
+                width:32%!important;
+                text-align:center!important;
+                padding:7px!important;
+                border : 2px solid black!important; 
+                margin: 15px 5px 10px 10px!important;
+                height: 225px!important;
+                display: block!important;
+                justify-content:space-between!important;
+                margin-top: 40px!important;">
+              
+                <div>
+                  <button type="button" class="mt-4 btn btn-primary" style="background-color: red;font-size: large; position: absolute; align: right; bottom: 0;">Book Now</button>
+                </div> 
+              </div>
+            {% endfor %}
+      </div>
+
+       
+
+
+        {% comment %} {% for i in "x"|rjust:"3" %}
+    <div class="row">
+        {{ i }}
+    </div>
+{% endfor %} {% endcomment %}
+
+      </div>
+  </body>
+</html>

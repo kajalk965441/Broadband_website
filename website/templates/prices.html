@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid my-4">
+    <section id="pricing" class="pricing" style="text-align: center">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pricing</h2>
+                <div class="row">
+                    {% for i in prc %}
+                        <div class="div1 mt-2 col-md-4">
+                            <h5 class="my-3">{{i.price}}</h5>
+                            <p>{{i.offer}}</p>
+                            <button type="button" class="mt-4 btn btn-primary">Book Now</button>
+                        </div>
+                        {% comment %} <button type="button" class="mt-4 btn btn-primary">Book Now</button> {% endcomment %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div>
+    <a href="#" title="Banner 6" class="center" style="border:none;">
+        <img class="img-responsive img-fluid" src="https://iaxntelecom.com/upload/banner06.jpg1508155441" alt="Banner 6" title="Banner 6">
+    </a>
+</div>
+{% endblock %}
