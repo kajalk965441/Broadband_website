@@ -2,8 +2,6 @@ from django.shortcuts import render
 from .models import contact
 from .models import servicesmodel, pricemodel
 
-
-
 def home(request):
     if request.method=='POST':
     #   email= request.POST['email']
@@ -16,8 +14,10 @@ def home(request):
       obj= contact( name= name ,address= address, city=city, state=state)
       obj.save()
     return render(request, 'home.html')
+
 def about(request):
     return render(request, 'about.html')
+
 def services(request):
     serv = servicesmodel.objects.all()
     print(serv)
@@ -40,7 +40,9 @@ def contactlist(request):
       obj= contact( name= name ,address= address, city=city, state=state)
       obj.save()
     return render(request, 'contact.html')
+
 def test(request):
     return render(request, 'test.html')
+
 def kkk(request):
     return render(request, 'test.html')
